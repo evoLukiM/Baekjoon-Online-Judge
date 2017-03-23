@@ -672,3 +672,112 @@ int main()
 		printf("\n");
 	}
 }
+
+//-----------------------------------------
+
+//2017.03.20
+//2522
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n - (i + 1); j++)
+		{
+			printf(" ");
+		}
+		for (int k = 0; k < i + 1; k++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	//--------------
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int k = 0; k < i + 1; k++)
+		{
+			printf(" ");
+		}
+		for (int j = 0; j < n - (i + 1); j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+
+//-----------------------------------------
+
+//2017.03.20
+//10991
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n - (i + 1); j++)
+		{
+			printf(" ");
+		}
+		printf("*");
+		for (int k = 0; k < i; k++)
+		{
+			printf(" *");
+		}
+		printf("\n");
+	}
+}
+
+//-----------------------------------------
+
+//2017.03.20
+//10992
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+
+	for (int i = 0; i < n; i++)
+	{
+		if (i+1 == n)
+		{
+			for (int i = 0; i < (2*n)-1; i++)
+			{
+				printf("*");
+			}
+			return 0;
+		}
+
+		for (int j = 0; j < (n-1)-i; j++)
+		{
+			printf(" ");
+		}
+		printf("*");
+		for (int k = 0; k < (2 * i)-1; k++)
+		{
+			printf(" ");
+		}
+		if (i == 0)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf("*\n");
+		}
+	}
+}
